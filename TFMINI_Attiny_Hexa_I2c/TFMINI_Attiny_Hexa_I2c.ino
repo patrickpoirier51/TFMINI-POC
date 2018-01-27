@@ -1,3 +1,24 @@
+/*
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+   This is a MaxBotix MaxsonarI2CXL emulator program that can be used with a
+   Benewake TFMINI TOF Laser rangefinder. This allows the serial stream to be converted
+   to an I2C message that is more convenient for most Flight Controler that are lacking 
+   UARTS. 
+   Tested with Ardupilot by Patrick Poirier December 2017.
+   Might containe open licenced code from other sources, thank you ;-)
+   More on my github https://github.com/patrickpoirier51
+ */
+
+
 #include "TinyWireS.h"    
 #define I2C_SLAVE_ADDR  0x3 
 
